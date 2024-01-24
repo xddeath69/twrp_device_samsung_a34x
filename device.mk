@@ -6,3 +6,13 @@
 #
 
 LOCAL_PATH := device/samsung/a34x
+
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# tzdata
+PRODUCT_PACKAGES_ENG += \
+    tzdata_twrp
